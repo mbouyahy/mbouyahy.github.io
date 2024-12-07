@@ -1,0 +1,252 @@
+/* General styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #000000;
+  background-image: url(../public/sebastian-svenson-LpbyDENbQQg-unsplash.jpg); /* Image from public folder */
+  background-size: cover;
+  background-position: center;
+}
+
+.app-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .icon {
+  display: block;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  margin: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #fea918; /* Hover effect */
+}
+
+/* Content styles */
+.content {
+  margin-left: 80px;
+  padding: 20px;
+  flex: 1;
+  color: white;
+}
+
+
+.App .social-media-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.App .icon {
+  color: #ffffff;
+  font-size: 40px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.App .icon:hover {
+  transform: scale(1.2);
+  color: #fea918; /* Highlight color for hover */
+}
+
+.App a {
+  text-decoration: none;
+}
+
+.circle {
+  height: 35px;
+  width: 35px;
+  border-radius: 24px;
+  background-color: rgb(0, 0, 0);
+  position: fixed; 
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; /* so that it stays on top of all other elements */
+}
+
+.wave-text {
+  font-size: 15rem;
+  font-family: 'Indie Flower';
+  animation: sineWave 3s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wave-fname {
+  font-size: 6rem;
+  font-family: 'Indie Flower';
+  color: #fea918;
+  animation: sineWave 3s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description {
+  font-size: 2rem;
+  font-family: 'Indie Flower';
+  animation: sineWave 3s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/* 
+.time-line {
+  font-size: 2rem;
+  font-family: 'Indie Flower';
+  animation: sineWave 3s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+.wave-container .home-showProjects {
+  display: flex;
+  justify-content: center;
+}
+
+.showProjects-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: 'Indie Flower';
+  background-color: #fea918;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.showProjects-btn:hover {
+  background-color: #84c5cb;
+}
+
+.bou {
+  color: #fea918;
+}
+
+@keyframes sineWave {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for Responsiveness */
+
+/* For Tablets and smaller screens */
+@media (max-width: 1800px) {
+  .wave-text {
+    font-size: 100px; /* Adjust font size for smaller screens */
+  }
+
+  .wave-fname {
+    font-size: 100px; /* Adjust font size for smaller screens */
+  }
+
+  .description {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .showProjects-btn {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 8px 16px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 1400px) {
+  .wave-text {
+    font-size: 70px; /* Adjust font size for smaller screens */
+  }
+
+  .wave-fname {
+    font-size: 70px; /* Adjust font size for smaller screens */
+  }
+
+  .description {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .showProjects-btn {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 8px 16px; /* Adjust padding */
+  }
+}
+
+/* For Tablets and smaller screens */
+@media (max-width: 768px) {
+  .wave-text {
+    font-size: 35px; /* Adjust font size for smaller screens */
+  }
+
+  .wave-fname {
+    font-size: 35px; /* Adjust font size for smaller screens */
+  }
+
+  .description {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .showProjects-btn {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 8px 16px; /* Adjust padding */
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  .wave-text {
+    font-size: 35px; /* Smaller font size on mobile */
+  }
+
+  .wave-fname {
+    font-size: 35px; /* Smaller font size on mobile */
+  }
+
+  .description {
+    font-size: 1.2rem; /* Smaller font size on mobile */
+  }
+
+  .showProjects-btn {
+    font-size: 14px; /* Smaller font size on mobile */
+    padding: 6px 12px; /* Adjust padding for mobile */
+  }
+}
