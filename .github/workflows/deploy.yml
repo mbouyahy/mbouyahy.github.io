@@ -31,8 +31,7 @@ jobs:
 
     - name: Deploy to GitHub Pages
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Ensure the secret is correctly set as GITHUB_TOKEN
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}  # Use the PAT stored in secrets
       run: |
-        # Ensure the GitHub Pages branch is set up with the token for authentication
-        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+        git remote set-url origin https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/${{ github.repository }}.git
         npm run deploy  # Deploy to the gh-pages branch
