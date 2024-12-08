@@ -30,6 +30,7 @@
     "web-vitals": "^2.1.4"
   },
   "homepage": "https://mbouyahy.github.io/",
+  "deploy": "gh-pages -d build --repo https://$GH_TOKEN@github.com/mbouyahy/mbouyahy.github.io.git",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
