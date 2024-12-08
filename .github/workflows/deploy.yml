@@ -23,8 +23,8 @@ jobs:
 
     - name: Set up Git configuration
       run: |
-        git config --global user.name "Your Name"
-        git config --global user.email "you@example.com"
+        git config --global user.name "mbouyahy"
+        git config --global user.email "mourad.bh06@gmail.com"
 
     - name: Build the app
       run: npm run build  # Build the production version of the app
