@@ -31,7 +31,7 @@
   },
   "homepage": "https://mbouyahy.github.io/",
   "engines": {
-    "node": ">=18",
+    "node": ">=20",
     "npm": ">=8.19.4"
   },
   "scripts": {
